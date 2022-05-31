@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="2_profile_page.css">
+</head>
+<body>
+    <!-- wrapper -->
+    <div>
+        <!-- top nav bar -->
+        <div class="flex justaround" id="nav_bar_background">
+            <!-- nav bar content -->
+            <div class="flex justbetween" id="nav_bar_content">
+                <!-- left side -->
+                <div class="flex aligncenter gap20 whitefont">
+                    <h1>Profile</h1>
+                    <p class="normal">Home</p>
+                    <p class="normal">My Profile</p>
+                    <p class="normal">Find Connections</p>
+                </div>
+                <!-- right side -->
+                <div class="flex aligncenter">
+                    <button class="whitefont" id="sign_out_button">Sign Out</button>
+                </div>
+            </div>
+        </div>
+        <!-- main body -->
+        <div class="flex justaround" id="main_body_background">
+            <!-- main body content-->
+            <div class="flex justbetween" id="main_body">
+                <!-- left side -->
+                <div class="flex flexdown gap15" id="left_side">
+                    <!-- profile card -->
+                    <div>
+                        <!-- top bar -->
+                        <div id="profile_card_top_bar">
+                            <img src="C:\Users\danhe\Desktop\coding_dojo\web_fundamentals\2_web_development_css\images\jane-m.jpg" id="profile_picture">
+                        </div>
+                        <!-- main content -->
+                        <div class="flex flexdown gap10 right_side_content_border" id="profile_card_content">
+                            <h2>Jane Doe</h2>
+                            <p class="flex gap5"><img src="C:\Users\danhe\Desktop\coding_dojo\web_fundamentals\2_web_development_css\images\map-marker.png" class="icons">Seattle</p>
+                            <p>Developer | Engineer | Problem Solver<br>Master of shadows and the Internet!</p>
+                            <p class="flex gap5"><img src="C:\Users\danhe\Desktop\coding_dojo\web_fundamentals\2_web_development_css\images\gear.png" class="icons"><a href="#" class="normal">edit profile</a></p>
+                        </div>
+                    </div>
+                    <!-- education -->
+                    <div>
+                        <!-- top bar -->
+                        <p class="flex aligncenter whitefont" id="left_side_top_bar">Education</p>
+                        <!-- education content -->
+                        <div class="right_side_content_border flex flexdown gap5">
+                            <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                            <h4 class="normal">Dec 2019 - Mar 2020</h4>
+                            <p>Triple black belt in Python, MERN, and C#...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side -->
+                <div class="flex flexdown gap15" id="right_side">
+                    <!-- connection requests -->
+                    <div>
+                        <!-- top bar -->
+                        <div class="flex whitefont right_side_top_bar">
+                            <p class="flex gap10 aligncenter">
+                                <span class="flex aligncenter justaround" id="number_of_requests">2</span>Connection Requests
+                            </p>
+                        </div>
+                        <!-- list of connection requests -->
+                        <div class="right_side_contents">
+                            <!-- first request -->
+                            <div class="flex justbetween connection_request_rows">
+                                <div class="flex gap10 aligncenter">
+                                    <img src="C:\Users\danhe\Desktop\coding_dojo\web_fundamentals\2_web_development_css\images\todd-s.jpg" alt="todd" class="right_side_pictures">
+                                    <p>Todd E</p>
+                                </div>
+                                <div class="flex gap10 aligncenter">
+                                    <img src="C:\Users\danhe\Desktop\coding_dojo\web_fundamentals\2_web_development_css\images\accept-circle.png" alt="accept" class="right_side_icons">
+                                    <img src="C:\Users\danhe\Desktop\coding_dojo\web_fundamentals\2_web_development_css\images\close-circle.png" alt="decline" class="right_side_icons">
+                                </div>
+                            </div>
+                            <!-- second request -->
+                            <div class="flex justbetween connection_request_rows">
+                                <div class="flex gap10 aligncenter">
+                                    <img src="C:\Users\danhe\Desktop\coding_dojo\web_fundamentals\2_web_development_css\images\phil-s.jpg" alt="todd" class="right_side_pictures">
+                                    <p>Phil K</p>
+                                </div>
+                                <div class="flex gap10 aligncenter">
+                                    <img src="C:\Users\danhe\Desktop\coding_dojo\web_fundamentals\2_web_development_css\images\accept-circle.png" alt="accept" class="right_side_icons">
+                                    <img src="C:\Users\danhe\Desktop\coding_dojo\web_fundamentals\2_web_development_css\images\close-circle.png" alt="decline" class="right_side_icons">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- your connections -->
+                    <div>
+                        <!-- top bar -->
+                        <div class="flex whitefont right_side_top_bar">
+                            <p class="flex gap10 aligncenter">
+                                <span class="flex justaround aligncenter" id="number_of_connections">500+</span>Your Connections
+                            </p>
+                        </div>
+                        <!-- list of connections -->
+                        <div class="right_side_contents">
+                            <!-- first connection -->
+                            <div class="flex justbetween connection_rows">
+                                <div class="flex gap10 aligncenter">
+                                    <img src="C:\Users\danhe\Desktop\coding_dojo\web_fundamentals\2_web_development_css\images\adrien-s.jpg" alt="adrien" class="right_side_pictures">
+                                    <p>Adrien D</p>
+                                </div>
+                            </div>
+                            <!-- second connection -->
+                            <div class="flex justbetween connection_rows">
+                                <div class="flex gap10 aligncenter">
+                                    <img src="C:\Users\danhe\Desktop\coding_dojo\web_fundamentals\2_web_development_css\images\anne-s.jpg" alt="anne" class="right_side_pictures">
+                                    <p>Anne J</p>
+                                </div>
+                            </div>
+                            <!-- third connection -->
+                            <div class="flex justbetween connection_rows">
+                                <div class="flex gap10 aligncenter">
+                                    <img src="C:\Users\danhe\Desktop\coding_dojo\web_fundamentals\2_web_development_css\images\alayne-s.jpg" alt="alayne" class="right_side_pictures">
+                                    <p>Alayne T</p>
+                                </div>
+                            </div>
+                            <!-- fourth connection -->
+                            <div class="flex justbetween connection_rows">
+                                <div class="flex gap10 aligncenter">
+                                    <img src="C:\Users\danhe\Desktop\coding_dojo\web_fundamentals\2_web_development_css\images\arry-s.jpg" alt="arry" class="right_side_pictures">
+                                    <p>Arry Y</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bottom bar -->
+                        <div class="right_side_contents connection_request_rows">
+                            <a href="#" class="normal">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
