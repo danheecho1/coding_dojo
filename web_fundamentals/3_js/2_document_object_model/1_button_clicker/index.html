@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex justaround">
+    <!-- container -->
+    <div class="flex flexdown gap20" id="container">
+        <!-- top bar -->
+        <div class="flex justbetween aligncenter" id="top_bar">
+            <h1>Dojonary</h1>
+            <input type="text" name="search" id="search" placeholder=" search">
+            <button id="login_button" onclick="login_out(this)">Login</button>
+        </div>
+        <!-- main content -->
+        <div class="flex gap20">
+            <!-- left column -->
+            <div class="flex flexdown gap20" id="left_column">
+                <!-- first word -->
+                <div class="flex border justbetween word_card">
+                    <!-- left side -->
+                    <div class="flex flexdown justbetween">
+                        <!-- word -->
+                        <div class="flex flexdown justaround aligncenter nowrap">
+                            <h1>ninja</h1>
+                            <h3>noun</h3>
+                            <h5>plural: ninjas</h5>
+                        </div>
+                        <!-- like button -->
+                        <button class="nowrap like_button" onclick="like(this)">13 likes</button>
+                    </div>
+                    <!-- right side -->
+                    <div class=" flex aligncenter definition">
+                        <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                    </div>
+                </div>
+                <!-- second word -->
+                <div class="flex border justbetween word_card">
+                    <!-- left side -->
+                    <div class="flex flexdown justbetween">
+                        <!-- word -->
+                        <div class="flex flexdown justaround aligncenter nowrap">
+                            <h1>ninja</h1>
+                            <h3>noun</h3>
+                            <h5>plural: ninjas</h5>
+                        </div>
+                        <!-- like button -->
+                        <button class="nowrap like_button" onclick="like(this)">37 likes</button>
+                    </div>
+                    <!-- right side -->
+                    <div class=" flex aligncenter definition">
+                        <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                    </div>
+                </div>
+            </div>
+            <!-- right column -->
+            <div class="border flex flexdown alignstart gap20" id="right_side">
+                <h2>Dojonary is defined by <span style="font-weight: bold;">YOU</span></h2>
+                <button id="add_button" onclick="add_definition(this)">Add Definition</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
