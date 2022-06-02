@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexdown {
+    flex-direction: column;
+}
+
+.justaround {
+    justify-content: space-around;
+}
+
+.justbetween {
+    justify-content: space-between;
+}
+
+.justevenly {
+    justify-content: space-evenly;
+}
+
+.alignstart {
+    align-self: start;
+}
+
+.aligncenter {
+    align-items: center;
+}
+
+.gap25 {
+    gap: 25px;
+}
+
+#container {
+    width: 600px;
+}
+
+.border {
+    border: solid 2px black;
+    padding: 25px 15px;
+}
+
+#top_bar {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+#your_feed {
+    text-align: center;
+    padding: 10px;
+}
+
+#left_column {
+    width: 140px;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+#right_column {
+    width: 440px;
+    gap:20px;
+}
+
+.right_side_item {
+    height: 90px;
+}
+
+#profile_picture {
+    width: 60px;
+}
+
+.button {
+    background-color: rgb(255, 217, 102);
+    padding: 5px 15px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px black;
+}

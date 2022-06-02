@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex justaround">
+    <!-- container -->
+    <div class="flex flexdown justaround" id="container">
+        <!-- top bar -->
+        <div id="top_bar">
+            <h1 >Network</h1>
+        </div>
+        <!-- random title -->
+        <h1 id="your_feed">Your Feed</h1>
+        <!-- main content -->
+        <div class="flex justbetween">
+            <!-- left column -->
+            <div class="flex flexdown justevenly alignstart aligncenter border" id="left_column">
+                <img src="assets/user-circle.png" alt="profile picture" id="profile_picture">
+                <a href="#">Add an avatar</a>
+                <h3>James Doe</h3>
+            </div>
+            <!-- right column -->
+            <div class="flex flexdown" id="right_column">
+                <!-- first item -->
+                <div class="flex flexdown border gap25 right_side_item">
+                    <!-- top half -->
+                    <div class="flex justbetween aligncenter">
+                        <h3>Neil M</h3>
+                        <div class="flex gap25 aligncenter">
+                            <h4><span id="first_count">0</span> like(s)</h4>
+                            <button class="button" onclick="first()">Like</button>
+                        </div>
+                    </div>
+                    <!-- bottom half -->
+                    <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+                </div>
+                <!-- second item -->
+                <div class="flex flexdown border gap25 right_side_item">
+                    <!-- top half -->
+                    <div class="flex justbetween aligncenter">
+                        <h3>Nichole K</h3>
+                        <div class="flex gap25 aligncenter">
+                            <h4><span id="second_count">0</span> like(s)</h4>
+                            <button class="button" onclick="second()">Like</button>
+                        </div>
+                    </div>
+                    <!-- bottom half -->
+                    <p>Just finished my <a href="#">next comic</a>, check it out.</p>
+                </div>
+                <!-- third item -->
+                <div class="flex flexdown border gap25 right_side_item">
+                    <!-- top half -->
+                    <div class="flex justbetween aligncenter">
+                        <h3>Jim R</h3>
+                        <div class="flex gap25 aligncenter">
+                            <h4><span id="third_count">0</span> like(s)</h4>
+                            <button class="button" onclick="third()">Like</button>
+                        </div>
+                    </div>
+                    <!-- bottom half -->
+                    <p>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
