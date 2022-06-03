@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- container -->
+    <div class="flex flexdown aligncenter">
+        <!-- top bar -->
+        <div class="flex justaround" id="top_bar">
+            <!-- top bar content -->
+            <div class="flex justbetween aligncenter whitefont" id="top_bar_content">
+                <!-- top bar left side -->
+                <h1>DojoWeather</h1>
+                <!-- top bar right side -->
+                <div class="flex gap25">
+                    <h3 class="hover" onclick="change_city()">Burbank</h3>
+                    <h3 class="hover" onclick="change_city()">Chicago</h3>
+                    <h3 class="hover" onclick="change_city()">Dallas</h3>
+                </div>
+            </div>
+        </div>
+        <!-- main body -->
+        <div class="flex flexdown justaround gap15" id="main_body">
+            <!-- selection header -->
+            <div class="flex justbetween aligncenter" id="selection_header">
+                <!-- selection header left side -->
+                <h2>San Jose</h2>
+                <!-- selection header right side -->
+                <div class="flex gap15">
+                    <p>show temperature in</p>
+                    <select name="temp_unit" id="temp_unit" onchange="convert()">
+                        <option value="C">°C</option>
+                        <option value="F">°F</option>
+                    </select>
+                </div>
+            </div>
+            <!-- weather blocks -->
+            <div class="flex flex1 gap15">
+                <!-- day 1 -->
+                <div class="flex flex1 flexdown gap15 weather_block aligncenter">
+                    <h3>Today</h3>
+                    <img src="assets/some_rain.png" alt="">
+                    <p>some rain</p>
+                    <div class="flex justbetween temp_block">
+                        <h4 class="redfont boldfont" id="temp1">24°</h4>
+                        <h4 class="bluefont boldfont" id="temp2">18°</h4>
+                    </div>
+                </div>
+                <!-- day 1 -->
+                <div class="flex flex1 flexdown gap15 weather_block aligncenter">
+                    <h3>Tomorrow</h3>
+                    <img src="assets/some_sun.png" alt="">
+                    <p>some rain</p>
+                    <div class="flex justbetween temp_block">
+                        <h4 class="redfont boldfont" id="temp3">27°</h4>
+                        <h4 class="bluefont boldfont" id="temp4">19°</h4>
+                    </div>
+                </div>
+                <!-- day 1 -->
+                <div class="flex flex1 flexdown gap15 weather_block aligncenter">
+                    <h3>Friday</h3>
+                    <img src="assets/some_clouds.png" alt="">
+                    <p>some rain</p>
+                    <div class="flex justbetween temp_block">
+                        <h4 class="redfont boldfont" id="temp5">21°</h4>
+                        <h4 class="bluefont boldfont" id="temp6">16°</h4>
+                    </div>
+                </div>
+                <!-- day 1 -->
+                <div class="flex flex1 flexdown gap15 weather_block aligncenter">
+                    <h3>Saturday</h3>
+                    <img src="assets/some_sun.png" alt="">
+                    <p>some rain</p>
+                    <div class="flex justbetween temp_block">
+                        <h4 class="redfont boldfont" id="temp7">26°</h4>
+                        <h4 class="bluefont boldfont" id="temp8">21°</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cookie bar -->
+        <div class="flex justevenly aligncenter gap15" id="cookie_box">
+            <!-- cookie bar left side -->
+            <img src="assets/cookie.png" alt="">
+            <!-- cookie bar middle section -->
+            <div>
+                <h4 class="boldfont">Stop! Cookie time</h4>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <!-- cookie bar right side -->
+            <button class="nowrap boldfont" id="button" onclick="cookie_accepted()">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

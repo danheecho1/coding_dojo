@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+    font-weight: lighter;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexdown {
+    flex-direction: column;
+}
+
+.justaround {
+    justify-content: space-around;
+}
+
+.justbetween {
+    justify-content: space-between;
+}
+
+.justevenly {
+    justify-content: space-evenly;
+}
+
+.aligncenter {
+    align-items: center;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.gap15 {
+    gap: 15px;
+}
+
+.gap25 {
+    gap: 25px;
+}
+
+.whitefont {
+    color: white;
+}
+
+.redfont {
+    color: red;
+}
+
+.bluefont {
+    color: blue;
+}
+
+.boldfont {
+    font-weight: bold;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.hover {
+    cursor: pointer;
+}
+
+
+#top_bar {
+    background-color: rgb(159, 197, 248);
+    width: 100%;
+    padding: 10px;
+}
+
+#top_bar_content {
+    width: 620px;
+}
+
+#main_body {
+    width: 620px;
+}
+
+#selection_header {
+    padding: 15px 0px;
+    border-bottom: solid 2px black;
+}
+
+.weather_block {
+    background-color: rgb(238, 238, 238);
+    padding: 10px 20px;
+}
+
+.weather_block img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.temp_block {
+    width: 100%;
+}
+
+#cookie_box {
+    border: solid 2px black;
+    background-color: rgb(238, 238, 238);
+    width: 620px;
+    padding: 5px 15px;
+    position: fixed;
+    bottom: 0;
+}
+
+#button {
+    padding: 3px 8px;
+    border: solid 2px black;
+    box-shadow: 2px 2px 2px black;
+    background-color: rgb(159,197,248);
+}
